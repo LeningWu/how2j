@@ -32,7 +32,7 @@ public class MyStack<T> {
             }
         }
         this.notifyAll();
-        return values.getLast();
+        return values.removeLast();
     }
 
     public T peek(){
